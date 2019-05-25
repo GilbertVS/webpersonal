@@ -1,0 +1,51 @@
+﻿{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock %}
+
+
+{% block headers %}
+    <h1>Portafolio</h1>
+    <span class="subheading">Curriculo</span>
+{% endblock %}
+
+{% block content %}
+    <!-- Proyecto -->
+<h1>Portafolio</h1>
+<span class="subheading">Curriculum</span><br> 
+<div class="container">
+    <div class="row">
+    <div class="span8">
+    <div class="row project"> 
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" 
+                {% load static %}
+                src="{% static 'core/img/imagen.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Segundo proyecto</h2>   
+            <p>As we got further and further away, it [the Earth]
+            diminished in size. Finally it shrank to the size of a marble,
+            the most beautiful you can imagine. That beautiful, warm....</p>
+            <p><a href="http://google.com">Mas informacion</a></p>
+        </div>   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" 
+                {% load static %}
+                src="{% static 'core/img/projectos.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Primer proyecto</h2>   
+            <p>As we got further and further away, it [the Earth]
+            diminished in size. Finally it shrank to the size of a marble,
+            the most beautiful you can imagine. That beautiful, warm....</p>
+            <p><a href="http://google.com">Más información</a></p>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
